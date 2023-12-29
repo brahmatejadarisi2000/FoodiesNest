@@ -7,7 +7,6 @@ export const dialogSlice = createSlice({
   initialState: initialDialogModal,
   reducers: {
     setDialogModal: (state, action) => {
-      console.log(action.payload);
       return action.payload;
     },
     closeDialogModal: state => {

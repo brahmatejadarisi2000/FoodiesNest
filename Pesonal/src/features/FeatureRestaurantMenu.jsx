@@ -64,9 +64,6 @@ const FeatureRestaurantMenu = () => {
 
   const findItemIndex = (itemName, restaurantName) => {
     const index = cartItems.findIndex(item => item.itemName === itemName && item.restaurantName === restaurantName);
-    console.log(itemName, restaurantName);
-    console.log(cartItems);
-    console.log(index);
     return index;
   };
 

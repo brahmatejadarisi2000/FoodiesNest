@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 
 export function useGeolocation() {
-  const [location, setLocation] = useState({ latitude: 16.304761, longitude: 80.430855 });
+  const [location, setLocation] = useState({ latitude: null, longitude: null });
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Check if geolocation is available in the browser
     if ('geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition(
         function (position) {

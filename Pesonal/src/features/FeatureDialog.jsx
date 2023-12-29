@@ -6,7 +6,6 @@ import Dialog from '../components/dialog';
 
 export function FeaturesDialog() {
   const dialogProps = useSelector(getDialogModalDataSelector);
-  console.log(dialogProps);
 
   if (!dialogProps.open) return null;
 

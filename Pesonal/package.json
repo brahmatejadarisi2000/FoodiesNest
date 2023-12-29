@@ -1,7 +1,7 @@
 {
-  "name": "SWIGGY CLONE",
+  "name": "FOODIESNEST",
   "version": "1.0.0",
-  "description": "\"Learning React From Scratch\"",
+  "description": "\"Inspired from swiggy app\"",
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",

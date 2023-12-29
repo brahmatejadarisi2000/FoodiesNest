@@ -10,8 +10,6 @@ export default function FeatureRestaurantCards({ selectedItem }) {
     `https://www.swiggy.com/dapi/restaurants/search/v3?lat=${location.latitude}&lng=${location.longitude}&str=${selectedItem}&trackingId=null&submitAction=SUGGESTION&queryUniqueId=495a041a-af67-184b-142c-e55f65168bc8&metaData=%7B%22type%22%3A%22DISH%22%2C%22data%22%3A%7B%22vegIdentifier%22%3A%22EGG%22%2C%22cloudinaryId%22%3A%223156bcfdd9e5be191e052fd23e1d24e2%22%2C%22dishFamilyId%22%3A%22846586%22%2C%22dishFamilyIds%22%3A%5B%22846586%22%5D%2C%22dishTypeIds%22%3A%5B%22847229%22%5D%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Dish%22%7D#`
   );
 
-  console.log(data?.data?.cards[1]?.groupedCard?.cardGroupMap?.DISH?.cards[1]);
-
   return (
     <div className="restaurants-list">
       {data?.data?.cards[1]?.groupedCard?.cardGroupMap?.DISH?.cards

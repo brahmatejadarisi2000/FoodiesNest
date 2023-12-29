@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Modal({ title, open, children }) {
-  console.log(title);
   if (!open) {
     return null;
   }

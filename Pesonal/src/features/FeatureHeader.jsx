@@ -10,7 +10,6 @@ import { useSelector } from 'react-redux';
 
 function FeatureHeader() {
   const cartCount = useSelector(getCartCountSelector);
-  console.log({ cartCount });
   return (
     <div className="header">
       <Link to={'/'}>
