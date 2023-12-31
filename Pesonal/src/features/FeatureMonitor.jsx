@@ -24,47 +24,57 @@ export default function FeatureMonitor() {
   useEffect(() => {
     setTopRestaurants(data?.data?.cards[2]?.card?.card);
     setBestOffers(data?.data?.cards[0]?.card?.card);
-    setPopularRestaurantsTitle(data?.data?.cards[3]?.card?.card?.title);
-    setRestaurants(data?.data?.cards[5]?.card?.card);
+    setPopularRestaurantsTitle(data?.data?.cards[2]?.card?.card?.title);
+    setRestaurants(data?.data?.cards[4]?.card?.card);
   }, [data]);
 
-  console.log(popularRestaurantsTitle);
-
-  // return (
-  //   <>
-  //     {data?.data?.cards.map((card) => {
-  //       return (
-  //         <CardContainer
-  //           title={bestOffers && BEST_OFFERS_FOR_YOU}
-  //           padding={bestOffers?.header?.headerStyling?.padding}
-  //           restaurants={bestOffers?.gridElements?.infoWithStyle?.info}
-  //         />
-  //       );
-  //     })}
-  //   </>
-  // );
-
-  console.log(topRestaurants?.gridElements?.infoWithStyle);
+  console.log(restaurants);
 
   return (
-    <>
-      <CardContainer
-        title={bestOffers && BEST_OFFERS_FOR_YOU}
-        padding={bestOffers?.header?.headerStyling?.padding}
-        restaurants={bestOffers?.gridElements?.infoWithStyle?.info}
-      />
-
-      <CardContainer
-        title={topRestaurants?.header?.title}
-        padding={topRestaurants?.header?.headerStyling?.padding}
-        restaurants={topRestaurants?.gridElements?.infoWithStyle?.restaurants}
-      />
-
+    <div className='monitor'>
+      {data?.data?.cards.slice(0, 2).map((card) => {
+        console.log(card.card?.card);
+        return (
+          <CardContainer
+            key={card.card?.card?.header?.title}
+            title={card.card?.card?.header?.title}
+            padding={card?.card?.card?.header?.headerStyling?.padding}
+            restaurants={
+              card?.card?.card?.gridElements?.infoWithStyle?.info ||
+              card?.card?.card?.gridElements?.infoWithStyle?.restaurants
+            }
+          />
+        );
+      })}
       <CardContainer
         title={popularRestaurantsTitle}
         restaurants={restaurants?.gridElements?.infoWithStyle?.restaurants}
         flexWrap={true}
       />
-    </>
+    </div>
   );
+
+  // console.log(topRestaurants?.gridElements?.infoWithStyle);
+
+  // return (
+  //   <>
+  //     <CardContainer
+  //       title={bestOffers && BEST_OFFERS_FOR_YOU}
+  //       padding={bestOffers?.header?.headerStyling?.padding}
+  //       restaurants={bestOffers?.gridElements?.infoWithStyle?.info}
+  //     />
+
+  //     <CardContainer
+  //       title={topRestaurants?.header?.title}
+  //       padding={topRestaurants?.header?.headerStyling?.padding}
+  //       restaurants={topRestaurants?.gridElements?.infoWithStyle?.restaurants}
+  //     />
+
+  //     <CardContainer
+  //       title={popularRestaurantsTitle}
+  //       restaurants={restaurants?.gridElements?.infoWithStyle?.restaurants}
+  //       flexWrap={true}
+  //     />
+  //   </>
+  // );
 }

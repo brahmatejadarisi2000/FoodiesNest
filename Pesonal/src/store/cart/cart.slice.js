@@ -23,12 +23,12 @@ export const cartSlice = createSlice({
 
       return state;
     },
-    removeItemFromCart: state => {
+    resetCart: state => {
       state.items = [];
     },
   },
 });
 
-export const { addItemToCart, removeItemFromCart } = cartSlice.actions;
+export const { addItemToCart, resetCart } = cartSlice.actions;
 
 export const cartReducer = cartSlice.reducer;
