@@ -43,7 +43,9 @@ export default function App() {
         <FeatureHeader />
         <FeatureMenuBranch />
         <FeaturesDialog />
-        <Outlet />
+        <div className='feature-outlet'>
+          <Outlet />
+        </div>
       </Provider>
     </div>
   );

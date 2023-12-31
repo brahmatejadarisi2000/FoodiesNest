@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react";
 
 function CartCountIcon() {
   return (
-    <svg width="24" height="24" stroke={'#60b246'} fill={'#60b246'} viewBox="-1 0 37 32">
-      <path d="M4.438 0L1.84 5.11 0 31.234h34.909L33.003 5.11 30.406 0z"></path>
+    <svg
+      width='25'
+      height='18'
+      stroke='#686b78'
+      stroke-width={"2"}
+      fill={"none"}
+      viewBox='-1 0 37 32'
+    >
+      <path d='M4.438 0l-2.598 5.11-1.84 26.124h34.909l-1.906-26.124-2.597-5.11z'></path>
     </svg>
   );
 }

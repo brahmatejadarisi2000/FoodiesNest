@@ -11,7 +11,7 @@ export default function FeatureRestaurantCards({ selectedItem }) {
   );
 
   return (
-    <div className="restaurants-list">
+    <div className='restaurants-list'>
       {data?.data?.cards[1]?.groupedCard?.cardGroupMap?.DISH?.cards
         .slice(1)
         .map((card) => (
@@ -33,7 +33,7 @@ export default function FeatureRestaurantCards({ selectedItem }) {
               }
               restaurantInfoSlugs={card.card.card.restaurant.info.slugs}
               restaurantId={card.card.card.restaurant.info.id}
-              width= {'26vw'}
+              width={"28vw"}
             />
           </div>
         ))}

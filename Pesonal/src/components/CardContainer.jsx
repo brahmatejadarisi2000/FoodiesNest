@@ -13,7 +13,6 @@ function CardContainer({
   const inlineStyles = {
     paddingLeft: `${padding?.left}px`,
     paddingTop: `${padding?.top}px`,
-    paddingBottom: `${padding?.bottom}px`,
   };
 
   const cardContainerRef = useRef();
@@ -46,8 +45,8 @@ function CardContainer({
   };
 
   return (
-    <div className="card-container" style={inlineStyles}>
-      <div className="card-container-header">
+    <div className='card-container' style={inlineStyles}>
+      <div className='card-container-header'>
         {restaurants ? (
           <div className={"card-container-main"}>
             <h2 className={"card-container-title"}>{title}</h2>
@@ -69,7 +68,7 @@ function CardContainer({
             )}
           </div>
         ) : (
-          <div className="shimmer-container-title" />
+          <div className='shimmer-container-title' />
         )}
       </div>
       <div
@@ -86,7 +85,7 @@ function CardContainer({
               .fill("0")
               .map((el, index) => <ShimmeredCard key={index} />)}
       </div>
-      <hr className="card-container-footer" />
+      <hr className='card-container-footer' />
     </div>
   );
 }
