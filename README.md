@@ -26,7 +26,6 @@ Make sure you have Node.js and npm installed on your machine.
 ### Folder Structure
 
 - `src`: Contains the source code of the application.
-- `public`: Contains public assets and the main HTML file.
 
 ### Running the App
 
