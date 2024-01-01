@@ -1,6 +1,6 @@
 # FoodiesNest
 
-Developed a Swiggy-inspired app using React and Styled Components, combining a visually appealing UI with efficient styling.
+Created an application inspired by Swiggy, utilizing React and styled with CSS, to blend a visually appealing user interface with effective styling.
 
 ## Technologies Used
 
