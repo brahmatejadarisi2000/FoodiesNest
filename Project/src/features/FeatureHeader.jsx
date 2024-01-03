@@ -34,7 +34,7 @@ function FeatureHeader() {
         </Link>
         <Link to={"/checkout"}>
           <span>
-            <span style={{ position: "relative", marginRight: "2px" }}>
+            <span className={"cart-count-container"}>
               <CartCountIcon />
               <span className={"cart-count"}>{cartCount}</span>
             </span>
