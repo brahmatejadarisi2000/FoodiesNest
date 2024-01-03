@@ -26,7 +26,7 @@ function FeatureHeader() {
             Search
           </span>
         </Link>
-        <Link to={"/offers"}>
+        <Link to={"/"}>
           <span>
             <CartIcon />
             Offers
@@ -41,10 +41,10 @@ function FeatureHeader() {
             Cart
           </span>
         </Link>
-        <Link to={"/"}>
+        <Link to={"/tastycombos"}>
           <span>
             <HelpIcon />
-            Help
+            {"Combo Picks"}
           </span>
         </Link>
         <Link to={"/"}>

@@ -10,6 +10,8 @@ import { Provider } from 'react-redux';
 import { rootStore } from './store/root.store';
 import FeatureCheckOut from './features/FeatureCheckOut';
 import FeaturesDialog from './features/FeatureDialog';
+import FeatureComboReco from './features/FeatureComboReco';
+import FeatureLoading from './features/FeatureLoading';
 
 export const appRouter = createBrowserRouter([
   {
@@ -32,6 +34,10 @@ export const appRouter = createBrowserRouter([
         path: '/restaurants/:name',
         element: <FeatureRestaurantMenu />,
       },
+      {
+        path: '/tastycombos',
+        element: <FeatureComboReco />,
+      }
     ],
   },
 ]);
@@ -43,6 +49,7 @@ export default function App() {
         <FeatureHeader />
         <FeatureMenuBranch />
         <FeaturesDialog />
+        <FeatureLoading/>
         <div className='feature-outlet'>
           <Outlet />
         </div>

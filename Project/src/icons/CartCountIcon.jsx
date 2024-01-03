@@ -6,7 +6,7 @@ function CartCountIcon() {
       width='25'
       height='18'
       stroke='#686b78'
-      stroke-width={"2"}
+      strokeWidth={"2"}
       fill={"none"}
       viewBox='-1 0 37 32'
     >
