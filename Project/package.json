@@ -1,7 +1,7 @@
 {
   "name": "FOODIESNEST",
   "version": "1.0.0",
-  "homepage": "https://<brahmatejadarisi2000.github.io/<FoodiesNest>/",
+  "homepage": "https://<brahmatejadarisi2000>.github.io/<FoodiesNest>/",
   "description": "\"Inspired from swiggy app\"",
   "default": "index.html",
   "scripts": {
