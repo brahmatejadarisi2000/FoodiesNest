@@ -6,7 +6,8 @@
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "test": "jest"
+    "test": "jest",
+    "build": "parcel build index.html"
   },
   "author": "TejaDarisi",
   "license": "ISC",
