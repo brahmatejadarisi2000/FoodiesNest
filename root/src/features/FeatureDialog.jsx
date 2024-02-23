@@ -2,7 +2,7 @@ import React from 'react';
 
 import { getDialogModalDataSelector } from '../store/dialog/dialog.selector';
 import { useSelector } from 'react-redux';
-import Dialog from '../components/dialog';
+import Dialog from '../components/Dialog';
 
 export function FeaturesDialog() {
   const dialogProps = useSelector(getDialogModalDataSelector);
