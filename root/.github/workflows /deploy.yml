@@ -1,4 +1,31 @@
-name: Deploy-GitHub-Pages
+# name: Deploy-GitHub-Pages
+
+# on:
+#   push:
+#     branches:
+#       - master
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
+
+#       - name: Install dependencies
+#         run: npm install
+
+#       - name: Build
+#         run: npm run build
+
+#       - name: Deploy
+#         run: npm run deploy
+#         env:
+#           CI: false
+
+
+name: Print Message
 
 on:
   push:
@@ -6,20 +33,10 @@ on:
       - master
 
 jobs:
-  deploy:
+  print-message:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Print Hello World
+        run: echo "Hello, world!"
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy
-        run: npm run deploy
-        env:
-          CI: false
