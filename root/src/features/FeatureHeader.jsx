@@ -4,7 +4,7 @@ import SignInIcon from "../icons/SignInIcon";
 import HelpIcon from "../icons/HelpIcon";
 import CartIcon from "../icons/CartIcon";
 import { Link } from "react-router-dom";
-import CartCountIcon from "../icons/cartCountIcon";
+import CartCountIcon from "../icons/CartCountIcon";
 import { getCartCountSelector } from "../store/cart/cart.selector";
 import { useSelector } from "react-redux";
 
