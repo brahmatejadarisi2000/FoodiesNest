@@ -26,7 +26,7 @@ jobs:
 
       - name: Deploy
         run: |
-          cd ./root  # Change this path to your React project directory
+          cd ./root/dist  # Change this path to your React project directory
           npx gh-pages -d build
         env:
           CI: false
