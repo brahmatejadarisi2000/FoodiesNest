@@ -14,15 +14,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          node-version: '14.x'
+          node-version: "18.x"
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./root  # Change this path to your React project directory
+        working-directory: ./root # Change this path to your React project directory
 
       - name: Build
         run: npm run build
-        working-directory: ./root  # Change this path to your React project directory
+        working-directory: ./root # Change this path to your React project directory
 
       - name: Deploy
         run: npx gh-pages -d ./root/dist
