@@ -41,45 +41,43 @@ const FeatureComboReco = () => {
   };
 
   return (
-    <>
-      <div className='pair-container'>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <Controller
-            control={control}
-            name='item'
-            rules={{ required: "This field is required" }}
-            render={({ field }) => (
-              <>
-                <input
-                  type='text'
-                  {...field}
-                  className={`input-suggestions-search ${
-                    errors.item ? "error" : ""
-                  }`}
-                  placeholder={"Explore Flavorful Matches Using AI"}
-                  autoComplete='off'
-                />
-                {errors.item && (
-                  <span className='error-message'>{errors.item.message}</span>
-                )}
-              </>
-            )}
-          />
+    <div className="pair-container">
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <Controller
+          control={control}
+          name="item"
+          rules={{ required: "This field is required" }}
+          render={({ field }) => (
+            <>
+              <input
+                type="text"
+                {...field}
+                className={`input-suggestions-search ${
+                  errors.item ? "error" : ""
+                }`}
+                placeholder={"Explore Flavorful Matches Using AI"}
+                autoComplete="off"
+              />
+              {errors.item && (
+                <span className="error-message">{errors.item.message}</span>
+              )}
+            </>
+          )}
+        />
 
-          <button type='submit'>{"Get Combos"}</button>
-        </form>
+        <button type="submit">{"Get Combos"}</button>
+      </form>
 
-        <div className='suggestion-container'>
-          {suggestions.length > 0
-            ? suggestions.map((suggestion, index) => (
-                <div key={index} className='suggestions'>
-                  {suggestion}
-                </div>
-              ))
-            : !isLoading && <h1>{"No Data Found"}</h1>}
-        </div>
+      <div className="suggestion-container">
+        {suggestions.length > 0
+          ? suggestions.map((suggestion, index) => (
+              <div key={index} className="suggestions">
+                {suggestion}
+              </div>
+            ))
+          : !isLoading && <h1>{"No Data Found"}</h1>}
       </div>
-    </>
+    </div>
   );
 };
 
