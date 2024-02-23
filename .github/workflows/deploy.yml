@@ -1,0 +1,29 @@
+name: Deploy-GitHub-Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./root  # Change this path to your React project directory
+
+      - name: Build
+        run: npm run build
+        working-directory: ./root  # Change this path to your React project directory
+
+      - name: Deploy
+        run: |
+          cd ./root  # Change this path to your React project directory
+          npx gh-pages -d build
+        env:
+          CI: false
