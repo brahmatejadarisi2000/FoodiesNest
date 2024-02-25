@@ -30,7 +30,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-            PERSONAL_ACCESS_TOKEN: ${{ secrets.Token }}
+            PERSONAL_ACCESS_TOKEN: ${{ secrets.TTT }}
         run: |
             git config user.email "brahmateja.darisi@gmail.com"
             git config user.name "brahmatejadarisi2000"
