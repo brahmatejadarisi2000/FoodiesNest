@@ -27,7 +27,7 @@ jobs:
       - name: Deploy
         run: |
              git config --global user.email "brahmateja.darisi@gmail.com"
-             git config --global user.name "brahmatejadarisi2000"
+             git config --global user.name "Teja Darisi"
              npm run deploy
         
         working-directory: ./root 
