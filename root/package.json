@@ -8,7 +8,7 @@
     "start": "parcel index.html",
     "test": "jest",
     "build": "parcel build index.html",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "author": "TejaDarisi",
   "license": "ISC",
