@@ -25,7 +25,11 @@ jobs:
         working-directory: ./root # Change this path to your React project directory
 
       - name: Deploy
-        run: npm run deploy
+        run: |
+             git config --global user.email "brahmateja.darisi@gmail.com"
+             git config --global user.name "brahmatejadarisi2000"
+             npm run deploy
+        
         working-directory: ./root 
         env:
           CI: false
