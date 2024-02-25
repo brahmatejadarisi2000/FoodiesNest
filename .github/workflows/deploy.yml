@@ -31,7 +31,7 @@ jobs:
             git config user.email "brahmateja.darisi@gmail.com"
             git config user.name "brahmatejadarisi2000"
             git checkout --orphan gh-pages
-            git add dist
+            git add root/dist
             git commit -m "Deploy to GitHub Pages"
             git push --force "https://${PERSONAL_ACCESS_TOKEN}@github.com/${{ github.repository }}" gh-pages
 
