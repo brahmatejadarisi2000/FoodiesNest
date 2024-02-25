@@ -7,7 +7,8 @@
   "scripts": {
     "start": "parcel index.html",
     "test": "jest",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "deploy": "gh-pages -d build"
   },
   "author": "TejaDarisi",
   "license": "ISC",
