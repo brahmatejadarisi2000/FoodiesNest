@@ -25,10 +25,7 @@ jobs:
         working-directory: ./root # Change this path to your React project directory
 
       - name: Deploy
-        run: |
-             git config --global user.email "brahmateja.darisi@gmail.com"
-             git config --global user.name "Teja Darisi"
-             npm run deploy
+        run: gh-pages -d dist -u "brahmatejadarisi2000" -t "${{ secrets.TOKEN }}"
         
         working-directory: ./root 
         env:
