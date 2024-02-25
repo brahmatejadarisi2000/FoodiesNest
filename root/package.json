@@ -8,7 +8,8 @@
     "start": "parcel index.html",
     "test": "jest",
     "build": "parcel build index.html",
-    "deploy": "gh-pages -d dist -u "brahmatejadarisi2000" -t ${{ secrets.TOKEN }}",
+    "deploy": "gh-pages -d dist -u 'brahmatejadarisi2000' -t ${{ secrets.TOKEN }}"
+,
   },
   "author": "TejaDarisi",
   "license": "ISC",
