@@ -28,7 +28,8 @@ jobs:
         run: npm run build
         working-directory: ./root # Change this path to your React project directory
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          source: root/dist 
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: ./root/dist
